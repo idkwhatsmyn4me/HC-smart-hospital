@@ -67,7 +67,7 @@ heart_disease = st.checkbox("Heart Disease")
 asthma = st.checkbox("Asthma")
 
 if st.button("Predict Department")
-    patient = pd.DataFrame([{
+  patient = pd.DataFrame([{
   'age' : age,
   'gender' : gender_map.get(gender, 0),
   'fever' : int(fever),
@@ -86,7 +86,7 @@ if st.button("Predict Department")
   'hypertension' : int(hypertension), 
   'heart_disease' : int(heart_disease),
   'chief_complaint' : cc_map.get(chief_complaint, 9)
-}})   
+}])   
 
 patient_scaled = patient.copy()
 patient_scaled[cols_to_scale] = scaler.transform(
