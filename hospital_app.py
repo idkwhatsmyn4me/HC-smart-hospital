@@ -58,3 +58,4 @@ duration = st.selectbox(
 temperature_level = st.selectbox(
     "Temperature",
     list(temp_map.keys())
+)
