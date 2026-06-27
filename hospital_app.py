@@ -22,3 +22,7 @@ gender_map = bundle['gender_map']
 temp_map = bundle['hr_map']
 dur_map = bundle['dur_map']
 cc_map = bundle['cc_map']
+
+st.header["Patient Information"]
+
+age = st.number_inpuit("age", 1, 120, 35)
