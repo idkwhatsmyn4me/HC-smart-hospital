@@ -26,3 +26,20 @@ cc_map = bundle['cc_map']
 st.header("Patient Information")
 
 age = st.number_input("Age", 1, 120, 35)
+
+gender = st.selectbox(
+  "Gender",
+  ["Female", "Male"]
+)
+
+st.header("Symptoms")
+
+fever = st.checkbox("Fever")
+Cough = st.checkbox("Cough")
+headache = st .checkbox("Headache")
+chest_pain = st.checkbox("Chest_Pain")
+stomach_pain = st.checkbox("Stomach Pain")
+shortness_breath = st.checkbox("shortness of Breath")
+nausea_vomiting= st.checkbox("Nausea / Vomiting")
+dizziness = st.checkbox("Dizziness")
+skin_rash = st.checkbox("Skin Rash")
